@@ -10,9 +10,13 @@ RUN mkdir -p /app/ && chown -R node:node /app
 
 WORKDIR /app
 
-COPY package.json
+COPY package.json ./
 
-CMD ["npm", "install"]
+USER node
+
+RUN npm install
+
+COPY --chown=node:node . .
 
 EXPOSE 8080
 
