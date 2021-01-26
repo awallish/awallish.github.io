@@ -1,5 +1,5 @@
-name: deploy workflow
-on:
+name: deployment workflow
+on: 
   push:
     branches: [main]
 jobs:
@@ -7,13 +7,14 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: testing
+      - name: deploy
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }} 
+          password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            
+            cd ..
+            cd pub/awallish.github.io/
+            git pull
