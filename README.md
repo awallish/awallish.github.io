@@ -5,4 +5,4 @@
 My change: I added a link to my (actual) personal site, and my resume.
 
 ### TerpConnect page
-test
+https://www.terpconnect.umd.edu/~awallish/awallish.github.io/
