@@ -5,4 +5,4 @@
 My change: I added a link to my (actual) personal site, and my resume.
 
 ### TerpConnect page
-[Here it is](https://terpconnect.umd.edu/~directory_id/repo_name/)
+I didn't finish all of this part.
